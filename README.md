@@ -1,4 +1,4 @@
-# useDataApi React Hook
+# useApi React Hook
 
 [![Build Status](https://travis-ci.org/the-road-to-learn-react/use-data-api.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/use-data-api) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/the-road-to-learn-react/use-data-api.svg)](https://greenkeeper.io/) ![NPM](https://img.shields.io/npm/l/use-data-api.svg)
 
@@ -8,7 +8,7 @@ Custom hook for React Components to fetch data from an API. [Read more about it.
 
 ## Installation
 
-`npm install use-data-api`
+`npm install useApi`
 
 ## Usage
 
@@ -17,10 +17,10 @@ Accepts as first argument an endpoint URL and as second argument an initial stat
 ```
 import React from 'react';
 
-import useDataApi from 'use-data-api';
+import useDataApi from 'useApi';
 
 const AnyComponent = props => {
-  const [{ data, isLoading, isError }, doFetch] = useDataApi(
+  const [{ data, isLoading, isError }, doFetch] = useApi(
     'http://hn.algolia.com/api/v1/search?query=redux',
     null,
   );
@@ -31,8 +31,8 @@ const AnyComponent = props => {
 
 ## Contribute
 
-* `git clone git@github.com:the-road-to-learn-react/use-data-api.git`
-* `cd use-data-api`
+* `git clone`
+* `cd useApi`
 * `npm install`
 * `npm run test`
 
