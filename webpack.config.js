@@ -3,7 +3,7 @@ module.exports = {
   output: {
     path: __dirname + '/lib',
     filename: 'index.js',
-    library: 'use-custom-element',
+    library: 'use-api',
     libraryTarget: 'umd',
   },
   externals: {

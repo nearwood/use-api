@@ -8,7 +8,7 @@ Custom hook for React Components to fetch data from an API. [Read more about it.
 
 ## Installation
 
-`npm install useApi`
+`npm install use-api`
 
 ## Usage
 
@@ -17,10 +17,10 @@ Accepts as first argument an endpoint URL and as second argument an initial stat
 ```
 import React from 'react';
 
-import useDataApi from 'useApi';
+import useApi from 'use-api';
 
 const AnyComponent = props => {
-  const [{ data, isLoading, isError }, doFetch] = useApi(
+  const [{ data, isLoading, isError }, doFetch] = use-api(
     'http://hn.algolia.com/api/v1/search?query=redux',
     null,
   );
@@ -32,7 +32,7 @@ const AnyComponent = props => {
 ## Contribute
 
 * `git clone`
-* `cd useApi`
+* `cd use-api`
 * `npm install`
 * `npm run test`
 
