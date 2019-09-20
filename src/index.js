@@ -4,7 +4,11 @@ import axios from 'axios';
 const dataFetchReducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_INIT':
-      return { ...state, isLoading: true, isError: false };
+      return {
+        ...state,
+        isLoading: true,
+        isError: false
+      };
     case 'FETCH_SUCCESS':
       return {
         ...state,
@@ -36,6 +40,10 @@ const useApi = (initialUrl, initialData) => {
     let didCancel = false;
 
     const fetchData = async () => {
+      if (!url) {
+        return;
+      }
+
       dispatch({ type: 'FETCH_INIT' });
 
       try {
